@@ -7,37 +7,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet"><!--Dancing Script Font-->
     <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@400;500&display=swap" rel="stylesheet"><!--Tsukimi Rounded Font-->
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <main>
         <section id="header">
             <div id="main-heading">
-                <h1 class="main-heading"><span class="main-subheading">Sweet</span>Slumber</h1>
-                <p class="main-body">We know that sleep is the most important part of your day (or night). Here at Sweet Slumber, we help you relax with everything 
-                    you need to get a good night’s sleep.
-                </p>
-                <button class="button">Products</button>
-                <button class="button">About Us</button>
+                <h1 class="main-heading hidden"><span class="main-subheading">Sweet</span>Slumber</h1>
+                <div id="main-body">
+                    <p class="body hidden">We know that sleep is the most important part of your day (or night). Here at Sweet Slumber, we help you relax with everything 
+                        you need to get a good night’s sleep.
+                    </p>
+                </div>
+                <button class="button hidden" href="#">Products</button>
+                <button class="button hidden" href="#">About Us</button>
             </div>
         </section>
 
         <section id="products-main">
-            <div id="bedding">
+            <div id="bedding" class="hidden left-slide">
                 <h2>Bedding</h2>
             </div>
-            <div id="mattresses">
+            <div id="mattresses" class="hidden right-slide">
                 <h2>Mattresses</h2>
             </div>
         </section>
 
         <section id="products-sub">
-            <div id="pyjamas">
+            <div id="pyjamas" class="hidden up-slide">
                 <h2>Pyjamas</h2>
             </div>
-            <div id="accessories">
+            <div id="accessories" class="hidden up-slide">
                 <h2>Accessories</h2>
             </div>
-            <div id="merch">
+            <div id="merch" class="hidden up-slide">
                 <h2>Merchandise</h2>
             </div>
         </section>
@@ -46,16 +49,16 @@
             <h2 class="subheading">Sleep Tips</h2>
             <p class="body">Struggling to sleep? Here are some tips to help you get a good night’s rest.</p>
             <div id="sleep-articles">
-                <div id="tip-1" class="article">
+                <div id="tip-1" class="article hidden left-slide">
 
                 </div>
-                <div id="tip-2" class="article">
+                <div id="tip-2" class="article hidden left-slide">
     
                 </div>
-                <div id="tip-3" class="article">
+                <div id="tip-3" class="article hidden left-slide">
     
                 </div>
-                <div id="tip-4" class="article">
+                <div id="tip-4" class="article hidden left-slide">
     
                 </div>
             </div>
@@ -65,7 +68,7 @@
 
         </section>
     </main>
-    <footer>
+    <footer id="footer">
 
     </footer>
 </body>
