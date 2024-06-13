@@ -11,6 +11,12 @@
 </head>
 <body>
     <main>
+        <nav class="navbar">
+            <a href="#" class="navlink">Home</a>
+            <a href="#" class="navlink">Products</a>
+            <a href="#" class="navlink">Contact</a>
+        </nav>
+
         <section id="header">
             <div id="main-heading">
                 <h1 class="main-heading hidden"><span class="main-subheading">Sweet</span>Slumber</h1>
@@ -27,39 +33,40 @@
         <section id="products-main">
             <div class="hidden left-slide product">
                 <a href="#"><img id="bedding" src="images/Bedding-Image.png"></a>
-                <h2 class="text-overlay body">Bedding</h2>
+                <h2 class="text-overlay">Bedding</h2>
             </div>
             <div class="hidden right-slide product">
                 <a href="#"><img id="mattresses" src="images/Mattress-Image.png"></a>
-                <h2 class="text-overlay body">Mattresses</h2>
+                <h2 class="text-overlay">Mattresses</h2>
             </div>
         </section>
 
         <section id="products-sub">
             <div class="hidden up-slide product">
                 <a href="#"><img id="pyjamas" src="images/Pyjamas-Image.png"></a>
-                <h2 class="text-overlay body">Pyjamas</h2>
+                <h2 class="text-overlay">Pyjamas</h2>
             </div>
             <div class="hidden up-slide product">
                 <a href="#"><img id="accessories" src="images/Accessories-Image.png"></a>
-                <h2 class="text-overlay body">Accessories</h2>
+                <h2 class="text-overlay">Accessories</h2>
             </div>
             <div class="hidden up-slide product">
                 <a href="#"><img id="merch" src="images/Merch-Image.png"></a>
-                <h2 class="text-overlay body">Merchandise</h2>
+                <h2 class="text-overlay">Merchandise</h2>
             </div>
         </section>
         <section id="about">
-            <div id="about-us">
-                <h2>About Us</h2>
-            </div>
-            <div id="contact-us">
-
-            </div>
+                <p class="body">Have questions? Don't hesitate to contact us!</p>
+                <form id="form" class="hidden" action="POST">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="textarea" placeholder="Message">
+                    <button type="submit" class="button">Submit</button>
+                </form>
         </section>
     </main>
     <footer id="footer">
-
+        <p class="body" style="text-align: center;">&copy Sweet Slumber</p>
     </footer>
 </body>
 </html>

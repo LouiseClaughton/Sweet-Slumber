@@ -4,6 +4,25 @@
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
+/*** Nav Bar ***/
+.navbar {
+    background-color: transparent;
+    position: absolute;
+    left: 43%;
+    top: 3%;
+}
+
+.navlink {
+    color: white;
+    font-family: 'Tsukimi Rounded';
+    font-size: 16px;
+    margin: 15px;
+}
+
 /*** Header ***/
 
 #header {
@@ -85,18 +104,55 @@
     border-radius: 30px;
 }
 
+.text-overlay {
+    font-family: 'Tsukimi Rounded';
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
 /*** About Section ***/
 
 #about {
     height: 550px;
-    background-color: #060312;
+    background-image: linear-gradient(to top, #142349, #151c3a, #13162c, #100e1f, #060312);
+    text-align: center;
+    padding-top: 50px;
 }
+
+input[type=text], 
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+  }
+
+  input[type=textarea] {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 20px 0 40px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+  }
+
+  #form {
+    border-radius: 5px;
+    padding: 20px 580px 40px 580px;
+  }
 
 /*** Footer ***/
 
 #footer {
-    height: 550px;
-    background-color: black;
+    height: 300px;
+    background-image: linear-gradient(to bottom, #142349, #22294e, #2e2f53, #393658, #433d5d);
 }
 
 /*** Text ***/
@@ -123,10 +179,6 @@
     filter: brightness(0.7);
 }
 
-.text-overlay {
-    position: absolute;
-}
-
 /*** Elements ***/
 
 .button {
@@ -137,10 +189,11 @@
     border: none;
     border-radius: 30px;
     margin: 10px;
+    cursor: pointer;
 }
 
 .button:hover {
-    filter:brightness(90%);
+    filter:brightness(0.7);
     transition: 1s;
 }
 
